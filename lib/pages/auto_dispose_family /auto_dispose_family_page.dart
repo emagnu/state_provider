@@ -14,11 +14,6 @@ class AutoDisposeFamilyPage extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('AutoDisposeStateProvider'),
-      ),
-      body: const Text('AutoDisposeStateProvider'),
-    );
+    return Container();
   }
 }
