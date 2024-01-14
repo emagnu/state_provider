@@ -15,22 +15,23 @@ class BasicPage extends ConsumerWidget {
 
   @override
   Widget build(BuildContext context, WidgetRef ref) {
-    final value = ref.watch(counterProvider);
-    ref.listen(
-      counterProvider,
-      (previous, next) {
-        if (next == 3) {
-          showDialog(
-            context: context,
-            builder: (context) {
-              return AlertDialog(
-                content: Text('The counter value has reached $next'),
-              );
-            },
-          );
-        }
-      },
-    );
+    final value = ref.watch(ageProvider);
+    // final value = ref.watch(counterProvider);
+    // ref.listen(
+    //   counterProvider,
+    //   (previous, next) {
+    //     if (next == 3) {
+    //       showDialog(
+    //         context: context,
+    //         builder: (context) {
+    //           return AlertDialog(
+    //             content: Text('The counter value has reached $next'),
+    //           );
+    //         },
+    //       );
+    //     }
+    //   },
+    // );
 
     // if (value == 3) {
     //   showDialog(
